@@ -1,47 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Nishan Maharjan</title>
 
-<link rel="stylesheet" href="style.css">
+  <style>
+
+    body{
+      margin:0;
+      padding:0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color:white;
+    }
+
+    .container{
+      width:80%;
+      max-width:1000px;
+      margin:50px auto;
+      background: rgba(255,255,255,0.08);
+      padding:40px;
+      border-radius:20px;
+      box-shadow:0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h1{
+      font-size:45px;
+      color:#38bdf8;
+      margin-bottom:10px;
+    }
+
+    h2{
+      color:#facc15;
+      margin-top:40px;
+      border-bottom:2px solid #334155;
+      padding-bottom:10px;
+    }
+
+    p{
+      font-size:18px;
+      line-height:1.8;
+      color:#e2e8f0;
+    }
+
+    ul{
+      list-style:none;
+      padding:0;
+    }
+
+    ul li{
+      background:#1e293b;
+      margin:10px 0;
+      padding:15px;
+      border-radius:10px;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    ul li:hover{
+      transform:translateX(10px);
+      background:#334155;
+    }
+
+    .project{
+      background:#0f172a;
+      padding:20px;
+      margin-top:20px;
+      border-left:5px solid #38bdf8;
+      border-radius:10px;
+    }
+
+    .project h3{
+      color:#38bdf8;
+    }
+
+    .contact{
+      margin-top:20px;
+      background:#1e293b;
+      padding:20px;
+      border-radius:10px;
+    }
+
+    .contact a{
+      color:#38bdf8;
+      text-decoration:none;
+    }
+
+    .contact a:hover{
+      text-decoration:underline;
+    }
+
+  </style>
 
 </head>
 
 <body>
 
-<header>
-<h1>About Me</h1>
+  <div class="container">
 
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+    <h1>👋 Hello, I'm Nishan Maharjan</h1>
 
-<section class="content">
+    <p>
+      I am a passionate Computer Science student at Kyungdong University-Global Campus,
+      South Korea. I enjoy building creative and innovative projects related to
+      Web Development, IoT Systems, Cloud Computing, and Unity Game Development.
+    </p>
 
-<h2>Cloud Computing Practical Lab</h2>
+    <h2>🚀 My Expertise</h2>
 
-<p>
-This project demonstrates a cloud-hosted multi-page website using GitHub Pages.
-</p>
+    <ul>
+      <li>🌐 Frontend Web Development (HTML, CSS, JavaScript)</li>
+      <li>🎮 Unity Game Development</li>
+      <li>☁️ Cloud Computing Fundamentals</li>
+      <li>📡 IoT & Smart Systems</li>
+      <li>🗄️ Database Management & SQL</li>
+      <li>💻 C# Programming Basics</li>
+      <li>🔧 Git & GitHub</li>
+    </ul>
 
-<p>
-Technologies used:
-</p>
+    <h2>📂 Featured Projects</h2>
 
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>GitHub Pages</li>
-</ul>
+    <div class="project">
+      <h3>🗑️ Smart Dustbin IoT System</h3>
 
-</section>
+      <p>
+        A smart dustbin project that detects garbage levels using sensors
+        and sends notifications to mobile phones when the dustbin becomes full.
+      </p>
+    </div>
 
-<footer>
-<p>© 2026 Nishan Maharjan</p>
-</footer>
+    <div class="project">
+      <h3>🎈 Pop the Balloon Game</h3>
+
+      <p>
+        A Unity-based multi-level game where players protect balloons
+        from obstacles like birds, airplanes, and bombs.
+      </p>
+    </div>
+
+    <h2>🎯 Career Goals</h2>
+
+    <p>
+      My goal is to become a professional software developer and work on
+      real-world technologies related to Cloud Computing, IoT, and Game Development.
+    </p>
+
+    <h2>📫 Contact Me</h2>
+
+    <div class="contact">
+
+      <p>📍 Seoul, South Korea</p>
+
+      <p>
+        💻 GitHub:
+        <a href="https://github.com/yourusername" target="_blank">
+          github.com/yourusername
+        </a>
+      </p>
+
+      <p>
+        📧 Email:
+        yourmail@example.com
+      </p>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
