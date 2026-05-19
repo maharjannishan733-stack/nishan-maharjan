@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - Nishan Maharjan</title>
+
+  <title>Nishan Maharjan | About Me</title>
 
   <style>
 
-    body{
+    *{
       margin:0;
       padding:0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #0f172a, #1e293b);
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:linear-gradient(to right, #0f172a, #1e293b);
       color:white;
+      padding:40px;
     }
 
     .container{
-      width:80%;
       max-width:1000px;
-      margin:50px auto;
-      background: rgba(255,255,255,0.08);
+      margin:auto;
+      background:rgba(255,255,255,0.05);
       padding:40px;
       border-radius:20px;
       box-shadow:0 0 20px rgba(0,0,0,0.4);
     }
 
     h1{
-      font-size:45px;
+      font-size:50px;
       color:#38bdf8;
       margin-bottom:10px;
     }
 
+    .subtitle{
+      font-size:20px;
+      color:#cbd5e1;
+      margin-bottom:30px;
+    }
+
     h2{
-      color:#facc15;
       margin-top:40px;
+      margin-bottom:20px;
+      color:#facc15;
       border-bottom:2px solid #334155;
       padding-bottom:10px;
     }
 
     p{
-      font-size:18px;
       line-height:1.8;
       color:#e2e8f0;
-    }
-
-    ul{
-      list-style:none;
-      padding:0;
-    }
-
-    ul li{
-      background:#1e293b;
-      margin:10px 0;
-      padding:15px;
-      border-radius:10px;
       font-size:18px;
+    }
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:15px;
+      margin-top:20px;
+    }
+
+    .skill-box{
+      background:#1e293b;
+      padding:20px;
+      border-radius:12px;
       transition:0.3s;
     }
 
-    ul li:hover{
-      transform:translateX(10px);
+    .skill-box:hover{
+      transform:translateY(-5px);
       background:#334155;
     }
 
-    .project{
-      background:#0f172a;
-      padding:20px;
+    .projects{
       margin-top:20px;
-      border-left:5px solid #38bdf8;
-      border-radius:10px;
     }
 
-    .project h3{
+    .project-card{
+      background:#0f172a;
+      padding:25px;
+      margin-bottom:20px;
+      border-left:5px solid #38bdf8;
+      border-radius:12px;
+    }
+
+    .project-card h3{
+      margin-bottom:10px;
       color:#38bdf8;
     }
 
     .contact{
-      margin-top:20px;
       background:#1e293b;
       padding:20px;
-      border-radius:10px;
+      border-radius:12px;
+      margin-top:20px;
     }
 
     .contact a{
@@ -101,49 +119,89 @@
 
     <h1>👋 Hello, I'm Nishan Maharjan</h1>
 
+    <div class="subtitle">
+      Computer Science Student | Web Developer | IoT Enthusiast | Unity Developer
+    </div>
+
     <p>
       I am a passionate Computer Science student at Kyungdong University-Global Campus,
-      South Korea. I enjoy building creative and innovative projects related to
-      Web Development, IoT Systems, Cloud Computing, and Unity Game Development.
+      South Korea. I enjoy building modern websites, smart IoT systems,
+      and interactive Unity games. I love learning new technologies and
+      creating real-world projects that solve problems creatively.
     </p>
 
     <h2>🚀 My Expertise</h2>
 
-    <ul>
-      <li>🌐 Frontend Web Development (HTML, CSS, JavaScript)</li>
-      <li>🎮 Unity Game Development</li>
-      <li>☁️ Cloud Computing Fundamentals</li>
-      <li>📡 IoT & Smart Systems</li>
-      <li>🗄️ Database Management & SQL</li>
-      <li>💻 C# Programming Basics</li>
-      <li>🔧 Git & GitHub</li>
-    </ul>
+    <div class="skills">
+
+      <div class="skill-box">
+        🌐 HTML, CSS & JavaScript
+      </div>
+
+      <div class="skill-box">
+        🎮 Unity Game Development
+      </div>
+
+      <div class="skill-box">
+        ☁️ Cloud Computing
+      </div>
+
+      <div class="skill-box">
+        📡 IoT & Smart Systems
+      </div>
+
+      <div class="skill-box">
+        🗄️ SQL & Database Management
+      </div>
+
+      <div class="skill-box">
+        💻 C# Programming
+      </div>
+
+      <div class="skill-box">
+        🔧 Git & GitHub
+      </div>
+
+      <div class="skill-box">
+        📱 Responsive Web Design
+      </div>
+
+    </div>
 
     <h2>📂 Featured Projects</h2>
 
-    <div class="project">
-      <h3>🗑️ Smart Dustbin IoT System</h3>
+    <div class="projects">
 
-      <p>
-        A smart dustbin project that detects garbage levels using sensors
-        and sends notifications to mobile phones when the dustbin becomes full.
-      </p>
-    </div>
+      <div class="project-card">
 
-    <div class="project">
-      <h3>🎈 Pop the Balloon Game</h3>
+        <h3>🗑️ Smart Dustbin IoT System</h3>
 
-      <p>
-        A Unity-based multi-level game where players protect balloons
-        from obstacles like birds, airplanes, and bombs.
-      </p>
+        <p>
+          A smart dustbin project that detects garbage levels using sensors
+          and automatically sends notifications to mobile phones when the
+          dustbin becomes full.
+        </p>
+
+      </div>
+
+      <div class="project-card">
+
+        <h3>🎈 Pop the Balloon Game</h3>
+
+        <p>
+          A Unity-based game where players protect balloons from obstacles
+          like birds, airplanes, and bombs through multiple exciting levels.
+        </p>
+
+      </div>
+
     </div>
 
     <h2>🎯 Career Goals</h2>
 
     <p>
-      My goal is to become a professional software developer and work on
-      real-world technologies related to Cloud Computing, IoT, and Game Development.
+      My goal is to become a professional software developer specializing in
+      Cloud Computing, IoT Solutions, and Interactive Game Development.
     </p>
 
     <h2>📫 Contact Me</h2>
@@ -152,12 +210,16 @@
 
       <p>📍 Seoul, South Korea</p>
 
+      <br>
+
       <p>
         💻 GitHub:
-        <a href="https://github.com/yourusername" target="_blank">
+        <a href="https://github.com/yourusername">
           github.com/yourusername
         </a>
       </p>
+
+      <br>
 
       <p>
         📧 Email:
